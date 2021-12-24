@@ -15,7 +15,8 @@
 #header {
   width: 100%;
   height: 100px;
-  background-color: rgba(59, 134, 37, 0.733);
+  /* background-color: rgba(59, 134, 37, 0.733); */
+  background-image: linear-gradient(rgba(59, 134, 37, 0.733), rgb(59, 56, 56));
   display: flex; 
   flex-flow:row nowrap;
   justify-content: space-between;

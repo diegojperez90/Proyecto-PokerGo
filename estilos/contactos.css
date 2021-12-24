@@ -57,6 +57,12 @@
     font-size: 20px;
     background-color: tomato;
     padding: 10px;
+    transition: 0.7s;
+}
+
+.botones:hover {
+    font-size: 30px;
+    background-color: rgba(255, 99, 71, 0.575);
 }
 
 .imgIconoUbicacion {

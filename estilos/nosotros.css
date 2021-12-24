@@ -43,7 +43,22 @@
   max-height: 200px;
   border: 2px solid white;
   width: 100%;
+  animation-duration: 4s;
+  animation-name: aparecer;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
 }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 @media only screen and (max-width: 750px) {
 
