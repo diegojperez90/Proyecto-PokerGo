@@ -1,5 +1,6 @@
 #nosotros {
-  background-color: rgba(255, 0, 0, 0.699);
+  /* background-color: rgba(255, 0, 0, 0.699); */
+  background-image: url(../imagenes/fondoNosotros.svg);
   width: 100%;
   display: flex;
   flex-flow: column wrap;
