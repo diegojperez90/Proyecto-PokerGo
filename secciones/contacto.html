@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../inicio.css">
+  <link rel="stylesheet" href="../estilos/contactos.css">
+  <title>Contacto</title>
+</head>
+<body>
+  <header id="header">
+    <a href="../index.html"><img class="imagenLogo" src="../iconos/logo.png" alt="logo"></a>
+    <div class="contenedorNav">
+      <nav class="barraNav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="formatos.html">Formatos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <img class="barraNavResp" src="../iconos/menu.png" alt="icono menu">
+    </div>
+  </header>
+  <section id="contacto">
+    <h2 class="tituloFormulario">Contacto</h2>
+    <div class="contenedorContacto">
+      <form class="formularioContacto" action="" method="post" enctype="application/x-www-form-urlencoded">
+
+        <label for="casilla1">Nombre:</label>
+        <input type="text" name="casilla1"> <br><br>
+  
+        <label for="casilla2">Apellido:</label>
+        <input type="text" name="casilla2"><br><br>
+  
+        <label for="casilla3">Edad:</label>
+        <input type="number" name="casilla3"><br><br>
+  
+        <label for="casilla4">Email:</label>
+        <input type="email" required name="casilla4"><br><br>
+  
+        <label for="casilla5">Género:</label>
+        Hombre <input type="radio" value="Hombre" name="casilla5"> Mujer <input type="radio" value="Mujer" name="casilla5"> Sin especificar <input type="radio" value="Sin especificar" name="casilla5" checked><br><br>
+  
+        <label for="casilla6">Fecha de nacimiento:</label>
+        <input type="date"><br><br>
+  
+        <label for="casilla7">Teléfono:</label>
+        <input type="text" required placeholder="escribe tu tel"> <br><br>
+  
+        <label for="casilla8">Mensaje:</label><br>
+        <textarea name="areadetexto" id="" cols="40" rows="10" placeholder="escribe tu comentario"></textarea> <br><br>
+  
+        <div class="contenedorBotones">
+          <input type="submit" value="ENVIAR" class="botones">
+          <input type="reset" value="BORRAR" class="botones">
+        </div>
+      </form>
+      <div class="ubicacionMapa">
+        <p class="direccion"><img class="imgIconoUbicacion" src="../iconos/icono_maps.png" alt="ubicación"> Haedo 1575, Córdoba Capital</p>
+        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.4602417077294!2d-64.21869858485167!3d-31.428994181399936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a272919b398d%3A0x6c828f89dca068eb!2sHaedo%201575%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1640178136454!5m2!1ses-419!2sar" width="440" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+        <!-- <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.435982349819!2d-64.21674673668888!3d-31.42966227771884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a272919b398d%3A0x6c828f89dca068eb!2sHaedo%201575%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1637820888348!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy"alt="Mapa"></iframe> -->
+      </div>
+    </div>
+    
+  </section>
+  <footer>
+    <div class="infoCopyrigth">
+      <p>COPYRIGTH ipsum dolor sit amet consectetur adipisicing elit. Est quibusdam itaque nemo enim! Atque earum eaque maiores. Iste est blanditiis, placeat, at nulla amet quod laudantium, laborum vel quaerat cumque!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt optio harum doloremque maxime earum architecto molestias est incidunt quibusdam deleniti.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ut?</p>
+    </div>
+    <div class="seccionBotones">
+      <a class="btnIzq" href="#">
+        <img class="btnDescarga" src="../imagenes/botonGoogle.jpg" alt="Descarga Google Play">
+      </a>
+      <a class="btnDer" href="#">
+        <img class="btnDescarga" src="../imagenes/botonAppStore.jpg" alt="Descarga App Store">
+      </a>
+      <a class="anclaFac" href="https://www.facebook.com" target="_blank">
+        <img class="iconoFaceTwi" src="../iconos/facebook-logo.png" alt="Facebook">
+      </a>
+      <a class="anclaInst" href="https://www.instagram.com" target="blank">
+        <img class="iconoInsYou" src="../iconos/instagram.png" alt="Instagram">
+      </a>
+      <a class="anclaTwi" href="https://twitter.com" target="blank">
+        <img class="iconoFaceTwi" src="../iconos/twitter.png" alt="Twitter">
+      </a>  
+      <a class="anclaYou" href="https://www.youtube.com" target="blank">
+        <img class="iconoInsYou" src="../iconos/youtube.png" alt="Youtube">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

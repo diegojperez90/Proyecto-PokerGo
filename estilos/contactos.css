@@ -1,0 +1,84 @@
+#contacto {
+    width: 100%;
+    background-color:khaki;
+    padding: 10px 10px;
+}
+
+.tituloFormulario {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+.contenedorContacto {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.formularioContacto {
+    font-size: 20px;
+    min-width: 250px;
+    max-width: 600px;
+}
+
+.ubicacionMapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.iframe {
+    min-width: 350px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.direccion {
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+.contenedorBotones {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.botones {
+    font-size: 20px;
+    background-color: tomato;
+    padding: 10px;
+}
+
+.imgIconoUbicacion {
+    width: 20px;
+    height: 20px;
+}
+
+@media only screen and (max-width: 475px) {
+
+    .tituloFormulario {
+        font-size: 24px;
+    }
+
+    .formularioContacto {
+        font-size: 18px;
+    }
+
+    .direccion {
+        font-size: 18px;
+    }
+    
+    .botones {
+        font-size: 18px;
+    }
+}
