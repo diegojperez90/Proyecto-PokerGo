@@ -1,146 +1,104 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <link rel="stylesheet" href="inicio.css">
-  <title>PokerGo!</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="inicio.css">
+    <title>PokerGo2</title>
 </head>
 <body>
-  <header id="header">
-    <nav class="navbar navbar-expand-md navbar-dark">
-      <!-- Brand -->
-      <a class="navbar-brand" href="#"><img class="imagenLogo" src="iconos/logo.png" alt="logo"></a>
+    <header class="row header m-0">
+      <!-- Inicio Navbar-->
+        <nav class="navbar navbar-expand-md navbar-dark w-100">
+
+            <a class="navbar-brand" href="#"><div class="logo"></div></a>
+        
+            <button class="navbar-toggler iconBurguer" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="secciones/noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="secciones/formatos.html">Formatos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="secciones/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="secciones/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <!-- Fin Navbar-->
+    </header>
     
-      <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <main class="main row m-0 h-75">
+      <!-- Inicio Jumbotron-->
+        <div class="jumbotron col-xs-12 col-sm-7 p-0 d-flex flex-column justify-content-center text-center contenedorIzq ">
+          <h1 class="tituloPrincipal">Bienvenidos a PokerGo!</h1>
+          <p class="parrafosMain">Unete a nuestra pagina y comienza a jugar ya!!!</p>
+          <p class="parrafosMain">El mejor sitio y mas seguro de la web.</p>
+        </div>
+      <!-- FIn Jumbotron-->
+      <!-- Inicio Imagen Principal-->
+        <div class="col-xs-12 col-sm-5 flex-grow-1 p-0">
+          <img class="img-fluid d-none d-sm-block w-100 imgPrincipal" src="imagenes/imagenKQJ.jpeg" alt="naipes poker picas">
+              <img class="img-fluid d-block d-sm-none w-100 imgSecundaria" src="imagenes/imgHorizontal.jpg" alt="">
+        </div>
+      <!-- Fin Imagen Principal-->
+    </main>
     
-      <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="secciones/noticias.html">Noticias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="secciones/formatos.html">Formatos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="secciones/nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="secciones/contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- <a href="#"><img class="imagenLogo" src="iconos/logo.png" alt="logo"></a>
-    <div class="contenedorNav">
-      <nav class="barraNav">
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="secciones/noticias.html">Noticias</a></li>
-          <li><a href="secciones/formatos.html">Formatos</a></li>
-          <li><a href="secciones/nosotros.html">Nosotros</a></li>
-          <li><a href="secciones/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <img class="barraNavResp" src="./iconos/menu.png" alt="">
-    </div> -->
-  </header>
-  <main>
-    <div class="contenedorIzq">
-      <h1 id="tituloPrincipal" >Bienvenidos a PokerGo!</h1>
-      <p class="parrafoPortada">Unete a nuestra pagina y comienza a jugar ya!!!</p>
-      <p class="parrafoPortada">El mejor sitio y mas seguro de la web.</p>
-    </div>
-    <div class="contenedorDer">
-      <!-- <img class="imgPaginaPrincipal" src="imagenesNuevas/imagenKQJ.jpeg" alt="naipes poker picas"> -->
-    </div>
-  </main>
-  <footer class="container-fluid">
-    <div class="row">
-
-      <div class="col-xs-12 col-sm-7  text-white parrafosFooter">
-        <p>COPYRIGTH ipsum dolor sit amet consectetur adipisicing elit. Est quibusdam itaque nemo enim! Atque earum eaque maiores. Iste est blanditiis, placeat, at nulla amet quod laudantium, laborum vel quaerat cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt optio harum doloremque maxime earum architecto molestias est incidunt quibusdam deleniti.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ut?</p>
-      </div>
-
-
-      <div class="col-xs-12 col-sm-5  contenedorBotones">
-        <div class="row botonesDescarga">
-          <a class="col" href="#">
-            <img class="btnDescarga" src="imagenes/botonGoogle.jpg" alt="Descarga Google Play">
-          </a>
-          <a class="col" href="#">
-            <img class="btnDescarga" src="imagenes/botonAppStore.jpg" alt="Descarga App Store">
-          </a>
+    <footer class="footer row m-0">
+      <!-- Inicio Copyright-->
+        <div class="col-xs-12 col-sm-7 text-white">
+            <p class="parrafoFooter">Copyright © 2001-2022, Rational Intellectual Holdings Limited. Todos los derechos reservados. Este sitio web es operado por TSG Interactive Gaming Europe Limited, una compañía registrada en Malta bajo el número C54266, con domicilio social en Spinola Park, Level 2, Triq Mikiel Ang Borg, St Julians SPK 1000, Malta.</p>
+            <p class="parrafoFooter">N.º de licencia MGA/B2C/213/2011, otorgada el 1 de agosto de 2018. N.º de IVA maltés MT24413927. El juego online está regulado en Malta por la Autoridad de Loterías y Juegos de Malta.</p>
+            <p class="parrafoFooter">Las apuestas pueden ser perjudiciales si no se controlan y pueden generar adicción!</p>
         </div>
-
-
-        <div class="row redes">
-          <a class="anclaFac col" href="https://www.facebook.com" target="_blank">
-            <img class="iconoFaceTwi" src="iconos/facebook-logo.png" alt="Facebook">
-          </a>
-          <a class="anclaInst col" href="https://www.instagram.com" target="blank">
-            <img class="iconoInsYou" src="iconos/instagram.png" alt="Instagram">
-          </a>
-          <a class="anclaTwi col" href="https://twitter.com" target="blank">
-            <img class="iconoFaceTwi" src="iconos/twitter.png" alt="Twitter">
-          </a>  
-          <a class="anclaYou col" href="https://www.youtube.com" target="blank">
-            <img class="iconoInsYou" src="iconos/youtube.png" alt="Youtube">
-          </a>
+      <!-- Fin Copyright-->
+        <div class="col-xs-12 col-sm-5  contenedorBotones">
+          <!-- Inicio Botones Descargas-->
+            <div class="row botonesDescarga">
+              <a class="col" href="#">
+                <img class="btnDescarga" src="imagenes/botonGoogle.jpg" alt="Descarga Google Play">
+              </a>
+              <a class="col" href="#">
+                <img class="btnDescarga" src="imagenes/botonAppStore.jpg" alt="Descarga App Store">
+              </a>
+            </div>
+          <!-- Fin Botones Descargas-->
+          <!-- Inicio Iconos Redes-->
+            <div class="row redes">
+              <a class="col" href="https://www.facebook.com" target="_blank">
+                <img class="iconoRedes" src="imagenes/facebook-logo.png" alt="Facebook">
+              </a>
+              <a class="col" href="https://www.instagram.com" target="blank">
+                <img class="iconoRedes" src="imagenes/instagram.png" alt="Instagram">
+              </a>
+              <a class="col" href="https://twitter.com" target="blank">
+                <img class="iconoRedes" src="imagenes/twitter.png" alt="Twitter">
+              </a>  
+              <a class="col" href="https://www.youtube.com" target="blank">
+                <img class="iconoRedes" src="imagenes/youtube.png" alt="Youtube">
+              </a>
+            </div>
+          <!-- Fin Iconos Redes-->
         </div>
-
-      </div>
-
-
-
-
-    </div>
-
-
-
-    <!-- <div class="infoCopyrigth">
-      <p>COPYRIGTH ipsum dolor sit amet consectetur adipisicing elit. Est quibusdam itaque nemo enim! Atque earum eaque maiores. Iste est blanditiis, placeat, at nulla amet quod laudantium, laborum vel quaerat cumque!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt optio harum doloremque maxime earum architecto molestias est incidunt quibusdam deleniti.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ut?</p>
-    </div>
-    <div class="seccionBotones">
-      <a class="btnIzq" href="#">
-        <img class="btnDescarga" src="imagenes/botonGoogle.jpg" alt="Descarga Google Play">
-      </a>
-      <a class="btnDer" href="#">
-        <img class="btnDescarga" src="imagenes/botonAppStore.jpg" alt="Descarga App Store">
-      </a>
-      <a class="anclaFac" href="https://www.facebook.com" target="_blank">
-        <img class="iconoFaceTwi" src="iconos/facebook-logo.png" alt="Facebook">
-      </a>
-      <a class="anclaInst" href="https://www.instagram.com" target="blank">
-        <img class="iconoInsYou" src="iconos/instagram.png" alt="Instagram">
-      </a>
-      <a class="anclaTwi" href="https://twitter.com" target="blank">
-        <img class="iconoFaceTwi" src="iconos/twitter.png" alt="Twitter">
-      </a>  
-      <a class="anclaYou" href="https://www.youtube.com" target="blank">
-        <img class="iconoInsYou" src="iconos/youtube.png" alt="Youtube">
-      </a>
-    </div> -->
-  </footer>
+    </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-
 </body>
 </html>
