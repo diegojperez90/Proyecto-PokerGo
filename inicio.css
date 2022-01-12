@@ -40,20 +40,17 @@
     background-color: black !important;
 }
 
-.contenedorIzq {
+.jumbotron {
     color: black;
     font-family: 'Palanquin Dark', sans-serif;
     background-color: rgba(155, 145, 145, 0.822);
     padding: 0px 30px !important;
-}
-
-.contenedorIzq:hover {
-    border: 14px solid white;
-}
-
-.jumbotron {
     border-radius: 0px;
     margin-bottom: 0px;
+}
+
+.jumbotronIzq:hover {
+    border: 14px solid white;
 }
 
 .tituloPrincipal {

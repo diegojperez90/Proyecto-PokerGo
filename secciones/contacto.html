@@ -1,99 +1,169 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../inicio.css">
-  <link rel="stylesheet" href="../estilos/contactos.css">
-  <title>Contacto</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/contacto.css">
+    <link rel="stylesheet" href="../inicio.css">
+    
+    <title>Noticias</title>
 </head>
 <body>
-  <header id="header">
-    <a href="../index.html"><img class="imagenLogo" src="../iconos/logo.png" alt="logo"></a>
-    <div class="contenedorNav">
-      <nav class="barraNav">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="noticias.html">Noticias</a></li>
-          <li><a href="formatos.html">Formatos</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-      <img class="barraNavResp" src="../iconos/menu.png" alt="icono menu">
-    </div>
-  </header>
-  <section id="contacto">
-    <h2 class="tituloFormulario">Contacto</h2>
-    <div class="contenedorContacto">
-      <form class="formularioContacto" action="" method="post" enctype="application/x-www-form-urlencoded">
+    <header class="row header m-0">
+        <!-- Inicio Navbar-->
+        <nav class="navbar navbar-expand-md navbar-dark w-100">
 
-        <label for="casilla1">Nombre:</label>
-        <input type="text" name="casilla1"> <br><br>
-  
-        <label for="casilla2">Apellido:</label>
-        <input type="text" name="casilla2"><br><br>
-  
-        <label for="casilla3">Edad:</label>
-        <input type="number" name="casilla3"><br><br>
-  
-        <label for="casilla4">Email:</label>
-        <input type="email" required name="casilla4"><br><br>
-  
-        <label for="casilla5">Género:</label>
-        Hombre <input type="radio" value="Hombre" name="casilla5"> Mujer <input type="radio" value="Mujer" name="casilla5"> Sin especificar <input type="radio" value="Sin especificar" name="casilla5" checked><br><br>
-  
-        <label for="casilla6">Fecha de nacimiento:</label>
-        <input type="date"><br><br>
-  
-        <label for="casilla7">Teléfono:</label>
-        <input type="text" required placeholder="escribe tu tel"> <br><br>
-  
-        <label for="casilla8">Mensaje:</label><br>
-        <textarea name="areadetexto" id="" cols="40" rows="10" placeholder="escribe tu comentario"></textarea> <br><br>
-  
-        <div class="contenedorBotones">
-          <input type="submit" value="ENVIAR" class="botones">
-          <input type="reset" value="BORRAR" class="botones">
+            <a class="navbar-brand" href="../index.html"><div class="logo"></div></a>
+        
+            <button class="navbar-toggler iconBurguer" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../secciones/noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../secciones/formatos.html">Formatos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../secciones/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <!-- Fin Navbar-->
+    </header>
+
+    <section id="contacto">
+        <h2 class="text-center tituloSecciones">Contacto</h2>
+
+        <!--Inicio Contenedor Contactos-->
+        <div class="row contenedorContacto m-0">
+            <!--Inicio Formulario-->
+            <form class="col-md-6 col-xs-12">
+
+                <div class="form-group row espaciado">
+                    <label for="formGroupNombre" class="col-sm-3 col-xs-2 col-form-label">Nombre</label>
+                    <input type="text" class="form-control col-sm-8 col-xs-4 p-0 margenInput" id="formGroupNombre">
+                </div>
+
+                <div class="form-group row espaciado">
+                    <label for="formGrouApellido" class="col-sm-3 col-xs-2 col-form-label">Apellido</label>
+                    <input type="text" class="form-control col-sm-8 col-xs-4 p-0 margenInput" id="formGroupApellido">
+                </div>
+
+                <div class="form-group row espaciado">
+                    <label for="formGrouEdad" class="col-sm-3 col-xs-2 col-form-label">Edad</label>
+                    <input type="number" class="form-control col-sm-8 col-xs-4 p-0 margenInput" id="formGroupEdad">
+                </div>
+
+                <div class="form-group row espaciado">
+                    <label for="inputEmail" class="col-sm-3 col-xs-2 col-form-label">Email</label>
+                    <input type="email" class="form-control col-sm-8 col-xs-4 p-0 margenInput" id="inputEmail" required name="inputEmail">
+                </div>
+
+                <fieldset class="form-group row espaciado">
+                    <legend class="col-form-label col-sm-2 float-sm-left pt-0">Género</legend>
+                    <div class="col-sm-10 margenInput">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Hombre</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Mujer</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">SIn especificar</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group row espaciado">
+                    <label for="formGrouNacimiento" class="col-sm-4 col-xs-2 col-form-label">Fecha de nacimiento</label>
+                    <input type="date" class="form-control col-sm-7 col-xs-4 p-0 margenInput" id="formGroupNacimiento">
+                </div>
+
+                <div class="form-group row espaciado">
+                    <label for="formGrouTelefono" class="col-sm-3 col-xs-2 col-form-label">Telefono</label>
+                    <input type="tel" class="form-control col-sm-8 col-xs-4 p-0 margenInput" id="formGroupTelefono">
+                </div>
+
+                <div class="form-group row espaciado">
+                    <label for="formGrouMensaje" class="col-sm-3 col-xs-2 col-form-label" >Mensaje</label>
+                    <textarea class="form-control col-sm-8 col-xs-4 p-0 margenInput" id="formGrouMensaje" rows="6" placeholder="escribe tu comentario"></textarea>
+                </div>
+
+                <div class="form-group row espaciado">
+                    <div class="col-sm-10 botonesContacto">
+                        <button type="submit" class="btn btn-primary boton">ENVIAR</button>
+                        <button type="reset" class="btn btn-secondary boton">BORRAR</button>
+                    </div>
+                </div>
+            </form>
+            <!--Fin Formulario-->
+            <!--Inicio Iframe-->
+            <div class="col-md-6 ubicacionMapa">
+                <p class="direccion"><img class="imgIconoUbicacion" src="../imagenes/icono_maps.png" alt="ubicación"> Haedo 1575, Córdoba Capital</p>
+                <iframe class="embed-responsive-item iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.4602417077294!2d-64.21869858485167!3d-31.428994181399936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a272919b398d%3A0x6c828f89dca068eb!2sHaedo%201575%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1640178136454!5m2!1ses-419!2sar" width="440" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <!--Fin Iframe-->
         </div>
-      </form>
-      <div class="ubicacionMapa">
-        <p class="direccion"><img class="imgIconoUbicacion" src="../iconos/icono_maps.png" alt="ubicación"> Haedo 1575, Córdoba Capital</p>
-        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.4602417077294!2d-64.21869858485167!3d-31.428994181399936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a272919b398d%3A0x6c828f89dca068eb!2sHaedo%201575%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1640178136454!5m2!1ses-419!2sar" width="440" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-
-        <!-- <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.435982349819!2d-64.21674673668888!3d-31.42966227771884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a272919b398d%3A0x6c828f89dca068eb!2sHaedo%201575%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1637820888348!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy"alt="Mapa"></iframe> -->
-      </div>
-    </div>
+        <!--Fin Contenedor Contactos-->
+    </section>
     
-  </section>
-  <footer>
-    <div class="infoCopyrigth">
-      <p>COPYRIGTH ipsum dolor sit amet consectetur adipisicing elit. Est quibusdam itaque nemo enim! Atque earum eaque maiores. Iste est blanditiis, placeat, at nulla amet quod laudantium, laborum vel quaerat cumque!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt optio harum doloremque maxime earum architecto molestias est incidunt quibusdam deleniti.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ut?</p>
-    </div>
-    <div class="seccionBotones">
-      <a class="btnIzq" href="#">
-        <img class="btnDescarga" src="../imagenes/botonGoogle.jpg" alt="Descarga Google Play">
-      </a>
-      <a class="btnDer" href="#">
-        <img class="btnDescarga" src="../imagenes/botonAppStore.jpg" alt="Descarga App Store">
-      </a>
-      <a class="anclaFac" href="https://www.facebook.com" target="_blank">
-        <img class="iconoFaceTwi" src="../iconos/facebook-logo.png" alt="Facebook">
-      </a>
-      <a class="anclaInst" href="https://www.instagram.com" target="blank">
-        <img class="iconoInsYou" src="../iconos/instagram.png" alt="Instagram">
-      </a>
-      <a class="anclaTwi" href="https://twitter.com" target="blank">
-        <img class="iconoFaceTwi" src="../iconos/twitter.png" alt="Twitter">
-      </a>  
-      <a class="anclaYou" href="https://www.youtube.com" target="blank">
-        <img class="iconoInsYou" src="../iconos/youtube.png" alt="Youtube">
-      </a>
-    </div>
-  </footer>
+    <footer class="footer row m-0">
+    <!-- Inicio Copyright-->
+        <div class="col-xs-12 col-sm-7 text-white">
+            <p class="parrafoFooter">Copyright © 2001-2022, Rational Intellectual Holdings Limited. Todos los derechos reservados. Este sitio web es operado por TSG Interactive Gaming Europe Limited, una compañía registrada en Malta bajo el número C54266, con domicilio social en Spinola Park, Level 2, Triq Mikiel Ang Borg, St Julians SPK 1000, Malta.</p>
+            <p class="parrafoFooter">N.º de licencia MGA/B2C/213/2011, otorgada el 1 de agosto de 2018. N.º de IVA maltés MT24413927. El juego online está regulado en Malta por la Autoridad de Loterías y Juegos de Malta.</p>
+            <p class="parrafoFooter">Las apuestas pueden ser perjudiciales si no se controlan y pueden generar adicción!</p>
+        </div>
+    <!-- Fin Copyright-->
+        <div class="col-xs-12 col-sm-5  contenedorBotones">
+        <!-- Inicio Botones Descargas-->
+            <div class="row botonesDescarga">
+            <a class="col" href="#">
+                <img class="btnDescarga" src="../imagenes/botonGoogle.jpg" alt="Descarga Google Play">
+            </a>
+            <a class="col" href="#">
+                <img class="btnDescarga" src="../imagenes/botonAppStore.jpg" alt="Descarga App Store">
+            </a>
+            </div>
+        <!-- Fin Botones Descargas-->
+        <!-- Inicio Iconos Redes-->
+            <div class="row redes">
+            <a class="col" href="https://www.facebook.com" target="_blank">
+                <img class="iconoRedes" src="../imagenes/facebook-logo.png" alt="Facebook">
+            </a>
+            <a class="col" href="https://www.instagram.com" target="blank">
+                <img class="iconoRedes" src="../imagenes/instagram.png" alt="Instagram">
+            </a>
+            <a class="col" href="https://twitter.com" target="blank">
+                <img class="iconoRedes" src="../imagenes/twitter.png" alt="Twitter">
+            </a>  
+            <a class="col" href="https://www.youtube.com" target="blank">
+                <img class="iconoRedes" src="../imagenes/youtube.png" alt="Youtube">
+            </a>
+            </div>
+        <!-- Fin Iconos Redes-->
+        </div>
+    </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
