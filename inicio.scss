@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap');
+
+
+//paleta de colores inicio
+
+$color1: linear-gradient(rgba(59, 134, 37, 0.733), rgb(59, 56, 56));
+$color2: whitesmoke;
+$color3: black;
+$color4: rgba(155, 145, 145, 0.822);
+$color5: linear-gradient( rgb(59, 56, 56), rgba(59, 134, 37, 0.733));
+$color6: rgb(207, 45, 45);
+
+//operadores inicio
+
+$anchoLogo: 170px;
+$largoLogo: 80px;
+$largoLogoDos: 74px;
+$largoImgPrincipal: 560px;
+$ancho: 100%;
+
+//fuentes
+
+$font1: 'Asap', sans-serif;
+$font2: 'Palanquin Dark', sans-serif;
+
+//tamaños
+
+$size0: 75px;
+$size1: 40px;
+$size2: 30px;
+$size3: 24px;
+$size4: 22px;
+$size5: 20px;
+$size6: 18px;
+$size7: 16px;
+$size8: 10px;
+$size9: 5px;
+$sizeRedes: 44px;
+
+//tamaños queries
+
+$size10: 60px;
+$size11: 36px;
+$size12: 28px;
+$size13: 46px;
+
+//border 
+
+$borderHover: 14px solid $color2;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tituloSecciones {
+    margin-bottom: 0;
+    font-size: $size1;
+    padding-top: 10px;
+
+    @media only screen and (max-width: 750px) {
+        font-size: $size11;
+    }
+
+    @media only screen and (max-width: 475px) {
+        font-size: $size2;
+    }
+}
+
+header {
+
+    .navbar {
+        background-image: $color1;
+    
+        .logo {
+            width: $anchoLogo;
+            height: $largoLogo;
+            background-image: url("imagenes/logo.png");
+            background-size: cover;
+            border-radius: 15px;
+
+            @media only screen and (max-width: 475px) {
+                height: $largoLogoDos;
+            }
+        }
+    
+        .iconBurguer {
+            background-color: $color3 !important;
+        }
+    
+        .nav-item .nav-link:hover {
+            color: $color2 !important;
+        }
+    
+        .nav-link {
+            font-size: $size3;
+            font-family: $font1;
+            color: $color3 !important;
+        }
+    }
+}
+
+main {
+
+    .jumbotron {
+        color: $color3;
+        font-family: $font2;
+        background-color: $color4;
+        padding: 0px 30px !important;
+        border-radius: 0px;
+        margin-bottom: 0px;
+
+        .tituloPrincipal {
+            font-size: $size0;
+            margin-bottom: 10%;
+
+            @media only screen and (max-width: 750px) {
+                font-size: $size10;
+                margin-bottom: 50px;
+            } 
+
+            @media only screen and (max-width: 475px) {
+                font-size: $size13;
+            }
+        }
+
+        .tituloPrincipal:hover {
+            color: $color2;
+        }
+        
+        .parrafosMain {
+            font-size: $size2;
+
+            @media only screen and (max-width: 750px) {
+                font-size: $size3;
+            }
+
+            @media only screen and (max-width: 475px) {
+                font-size: $size5;
+            }
+        }
+        
+    }
+    
+    .jumbotron:hover {
+        border: $borderHover;
+    }
+
+    .imgPrincipal {
+        height: $largoImgPrincipal;
+    }
+    
+    .imgPrincipal:hover {
+        border: $borderHover;
+    }
+
+    .imgSecundaria:hover {
+        border: $borderHover;
+    }
+}
+
+#nosotros {
+    background-color: $color6;
+    font-family: $font2;
+    padding: 0px 30px;
+    
+    .contParrafosNosotros {
+        padding-top: 12px;
+        font-size: $size4;
+
+        @media only screen and (max-width: 750px) {
+            font-size: $size5;
+        }
+
+        @media only screen and (max-width: 475px) {
+            font-size: $size6;
+        }
+    }
+
+    .contenedorInferior {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: $size5;
+        padding: 30px 0px;
+
+        .imgTamaño {
+            min-width: 180px;
+            max-width: 280px;
+            min-height: 100px;
+            max-height: 200px;
+            width: $ancho;
+            animation-duration: 4s;
+            animation-name: aparecer;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes aparecer {
+            0% {
+                opacity: 0;
+            }
+        
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.footer {
+    background-image: $color5;
+    padding: 14px 0px !important;
+    font-family: $font1;
+
+    .parrafoFooter {
+        font-size: $size6;
+        line-height: 1.1;
+
+        @media only screen and (max-width: 475px) {
+            font-size: $size7;
+        }
+    } 
+
+    .contenedorBotones {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-left: 30px !important;
+    }
+
+    .botonesDescarga {
+        margin-bottom: $size1;
+        gap: $size8;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+        justify-content: center;
+
+        .btnDescarga {
+            min-width: 120px;
+            max-width: 200px;
+            width: $ancho;
+            border-radius: $size5;
+        }
+    }
+
+    .redes {
+        gap: $size9;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+
+        .iconoRedes {
+            width: $sizeRedes;
+            height: $sizeRedes;
+        }
+    }
+}
