@@ -59,7 +59,7 @@ header .navbar .nav-link {
   color: black !important;
 }
 
-main .jumbotron {
+.main .jumbotron {
   color: black;
   font-family: "Palanquin Dark", sans-serif;
   background-color: rgba(155, 145, 145, 0.822);
@@ -68,63 +68,157 @@ main .jumbotron {
   margin-bottom: 0px;
 }
 
-main .jumbotron .tituloPrincipal {
+.main .jumbotron .tituloPrincipal {
   font-size: 75px;
   margin-bottom: 10%;
 }
 
 @media only screen and (max-width: 750px) {
-  main .jumbotron .tituloPrincipal {
+  .main .jumbotron .tituloPrincipal {
     font-size: 60px;
     margin-bottom: 50px;
   }
 }
 
 @media only screen and (max-width: 475px) {
-  main .jumbotron .tituloPrincipal {
+  .main .jumbotron .tituloPrincipal {
     font-size: 46px;
   }
 }
 
-main .jumbotron .tituloPrincipal:hover {
+.main .jumbotron .tituloPrincipal:hover {
   color: whitesmoke;
 }
 
-main .jumbotron .parrafosMain {
+.main .jumbotron .parrafosMain {
   font-size: 30px;
 }
 
 @media only screen and (max-width: 750px) {
-  main .jumbotron .parrafosMain {
+  .main .jumbotron .parrafosMain {
     font-size: 24px;
   }
 }
 
 @media only screen and (max-width: 475px) {
-  main .jumbotron .parrafosMain {
+  .main .jumbotron .parrafosMain {
     font-size: 20px;
   }
 }
 
-main .jumbotron:hover {
+.main .jumbotron:hover {
   border: 14px solid whitesmoke;
 }
 
-main .imgPrincipal {
+.main .imgPrincipal {
   height: 560px;
 }
 
-main .imgPrincipal:hover {
+.main .imgPrincipal:hover {
   border: 14px solid whitesmoke;
 }
 
-main .imgSecundaria:hover {
+.main .imgSecundaria:hover {
   border: 14px solid whitesmoke;
+}
+
+#noticias, #nosotros {
+  background-color: #cf2d2d;
+  font-family: "Palanquin Dark", sans-serif;
+}
+
+#noticias .fondoLista, #nosotros .fondoLista {
+  background-color: #cf2d2d;
+  font-size: 24px;
+  border-bottom: 0px;
+}
+
+@media only screen and (max-width: 750px) {
+  #noticias .fondoLista, #nosotros .fondoLista {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  #noticias .fondoLista, #nosotros .fondoLista {
+    font-size: 20px;
+  }
+}
+
+#noticias .fondoLista .contenedorStickers, #nosotros .fondoLista .contenedorStickers {
+  gap: 10px;
+  text-align: center;
+}
+
+#noticias .fondoLista .contenedorStickers .btnWhatssap, #nosotros .fondoLista .contenedorStickers .btnWhatssap {
+  border: 3px solid whitesmoke;
+  border-radius: 15px;
+  font-family: "Palanquin Dark", sans-serif;
+}
+
+#noticias .fondoLista .imgMulti, #nosotros .fondoLista .imgMulti {
+  max-width: 320px;
+  max-height: 260px;
+  width: 100%;
+}
+
+#formatos {
+  background-image: url("imagenes/as.jpeg");
+  background-size: contain;
+  color: white;
+  font-family: "Palanquin Dark", sans-serif;
+  padding: 0px 30px 60px 30px;
+}
+
+#formatos .parrafoFormatos {
+  font-size: 24px;
+  margin: 40px 0px;
+}
+
+@media only screen and (max-width: 750px) {
+  #formatos .parrafoFormatos {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  #formatos .parrafoFormatos {
+    font-size: 20px;
+  }
+}
+
+#formatos .titulo--formato1 {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 30px 0px;
+  color: #346934;
+  text-shadow: 0 0 10px #346934;
+}
+
+#formatos .titulo--formato2 {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 30px 0px;
+  color: orange;
+  text-shadow: 0 0 10px orange;
+}
+
+#formatos .titulo--formato3 {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 30px 0px;
+  color: violet;
+  text-shadow: 0 0 10px violet;
+}
+
+#formatos .imgTamaño {
+  min-width: 160px;
+  max-width: 280px;
+  border: 2px solid white;
+  width: 100%;
 }
 
 #nosotros {
-  background-color: #cf2d2d;
-  font-family: "Palanquin Dark", sans-serif;
   padding: 0px 30px;
 }
 
@@ -197,10 +291,80 @@ main .imgSecundaria:hover {
   }
 }
 
+#contacto {
+  background-color: khaki;
+  font-family: "Palanquin Dark", sans-serif;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 475px) {
+  #contacto {
+    font-size: 20px;
+  }
+}
+
+#contacto .contenedorContacto {
+  margin-top: 20px !important;
+}
+
+#contacto .contenedorContacto .espaciado {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+#contacto .contenedorContacto .espaciado .margenInput {
+  margin-left: 20px;
+}
+
+#contacto .contenedorContacto .botonesContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#contacto .contenedorContacto .botonesContacto .boton {
+  background-color: tomato;
+  padding: 10px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#contacto .contenedorContacto .botonesContacto .boton:hover {
+  font-size: 30px;
+  background-color: rgba(255, 99, 71, 0.767);
+}
+
+#contacto .contenedorContacto .ubicacionMapa {
+  margin-top: 40px;
+  padding-left: 20px;
+}
+
+#contacto .contenedorContacto .ubicacionMapa .imgIconoUbicacion {
+  width: 20px;
+  height: 20px;
+}
+
+#contacto .contenedorContacto .ubicacionMapa .iframe {
+  min-width: 330px;
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .footer {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#3b3838), to(rgba(59, 134, 37, 0.733)));
   background-image: linear-gradient(#3b3838, rgba(59, 134, 37, 0.733));
-  padding: 14px 0px !important;
+  padding-top: 10px !important;
   font-family: "Asap", sans-serif;
 }
 
@@ -230,8 +394,6 @@ main .imgSecundaria:hover {
 }
 
 .footer .botonesDescarga {
-  margin-bottom: 40px;
-  gap: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,9 +404,8 @@ main .imgSecundaria:hover {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-bottom: 40px;
+  gap: 10px;
 }
 
 .footer .botonesDescarga .btnDescarga {
@@ -255,7 +416,6 @@ main .imgSecundaria:hover {
 }
 
 .footer .redes {
-  gap: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,6 +426,7 @@ main .imgSecundaria:hover {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  gap: 5px;
 }
 
 .footer .redes .iconoRedes {

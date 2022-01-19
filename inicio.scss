@@ -11,6 +11,9 @@ $color3: black;
 $color4: rgba(155, 145, 145, 0.822);
 $color5: linear-gradient( rgb(59, 56, 56), rgba(59, 134, 37, 0.733));
 $color6: rgb(207, 45, 45);
+$color7: tomato;
+$color8: rgba(255, 99, 71, 0.767);
+$color9: white;
 
 //operadores inicio
 
@@ -50,6 +53,37 @@ $size13: 46px;
 
 $borderHover: 14px solid $color2;
 
+//Mixin sin parametros
+
+@mixin flex-row-baseline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+}
+
+//Mixin con parametros
+
+@mixin position($display, $direction, $justify) {
+    display: $display;
+    flex-flow: $direction;
+    justify-content: $justify;
+}
+
+//mapa en seccion formatos
+$map1: (
+    formato1: rgb(52, 105, 52),
+    formato2: orange,
+    formato3: violet,
+);
+
+//Mapa 2 en seccion Nosotros aplicando map-get
+$map2Animacion: (
+    tiempo: 4s,
+    nombre: aparecer,
+    tiempoDelay: 2s,
+    repeticion: infinite,
+);
+
 
 * {
     margin: 0;
@@ -70,6 +104,7 @@ $borderHover: 14px solid $color2;
         font-size: $size2;
     }
 }
+
 
 header {
 
@@ -104,7 +139,8 @@ header {
     }
 }
 
-main {
+
+.main {
 
     .jumbotron {
         color: $color3;
@@ -163,9 +199,86 @@ main {
     }
 }
 
-#nosotros {
+
+#noticias {
     background-color: $color6;
     font-family: $font2;
+
+    .fondoLista {
+        background-color: $color6;
+        font-size: $size3;
+        border-bottom: 0px;
+
+        @media only screen and (max-width: 750px) {
+            font-size: $size4;
+        }
+
+        @media only screen and (max-width: 475px) {
+            font-size: $size5;
+        }
+
+        
+        .contenedorStickers {
+            gap: 10px;
+            text-align: center;
+
+            .btnWhatssap {
+                border: 3px solid $color2;
+                border-radius: 15px;
+                font-family: $font2;
+            }
+        }
+
+        .imgMulti {
+            max-width: 320px ;
+            max-height: 260px;
+            width: $ancho;
+        }
+    }
+}
+
+
+#formatos {
+    background-image: url("imagenes/as.jpeg");
+    background-size: contain;
+    color: $color9;
+    font-family: $font2;
+    padding: 0px 30px 60px 30px;
+
+    .parrafoFormatos {
+        font-size: $size3;
+        margin: 40px 0px;
+
+        @media only screen and (max-width: 750px) {
+            font-size: $size4;
+        }
+
+        @media only screen and (max-width: 475px) {
+            font-size: $size5;
+        }
+    }
+
+    @each $form, $col in $map1 {
+        .titulo--#{$form} {
+            font-size: $size2;
+            line-height: 1.5;
+            margin: 30px 0px;
+            color: $col;
+            text-shadow: 0 0 10px $col;
+        }
+    }
+
+    .imgTamaño {
+        min-width: 160px;
+        max-width: 280px;
+        border: 2px solid $color9;
+        width: $ancho;
+    }
+}
+
+
+#nosotros {
+    @extend #noticias;
     padding: 0px 30px;
     
     .contParrafosNosotros {
@@ -182,9 +295,7 @@ main {
     }
 
     .contenedorInferior {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
+        @include position(flex, row wrap, space-evenly);
         align-items: center;
         gap: $size5;
         padding: 30px 0px;
@@ -195,10 +306,10 @@ main {
             min-height: 100px;
             max-height: 200px;
             width: $ancho;
-            animation-duration: 4s;
-            animation-name: aparecer;
-            animation-delay: 2s;
-            animation-iteration-count: infinite;
+            animation-duration: map-get($map2Animacion, tiempo);
+            animation-name: map-get($map2Animacion, nombre);
+            animation-delay: map-get($map2Animacion, tiempoDelay);
+            animation-iteration-count: map-get($map2Animacion, repeticion);
         }
         
         @keyframes aparecer {
@@ -213,9 +324,69 @@ main {
     }
 }
 
+
+#contacto {
+    background-color:khaki;
+    font-family: $font2;
+    font-size: $size4;
+
+    @media only screen and (max-width: 475px) {
+        font-size: $size5;
+    }
+
+    .contenedorContacto {
+        margin-top: 20px !important;
+
+        .espaciado {
+            margin-left: 10px;
+            margin-right: 20px;
+
+            .margenInput {
+                margin-left: 20px;
+            }
+        }
+
+        .botonesContacto {
+            @include position(flex, row wrap, space-evenly);
+            gap: 30px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+
+            .boton {
+                background-color: $color7;
+                padding: 10px;
+                transition: 0.7s;
+            }
+            
+            .boton:hover {
+                font-size: 30px;
+                background-color: $color8;
+            }
+        }
+
+        .ubicacionMapa {
+            margin-top: 40px;
+            padding-left: 20px;
+
+            .imgIconoUbicacion {
+                width: 20px;
+                height: 20px;
+            }
+
+            .iframe {
+                min-width: 330px;
+                max-width: 500px;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
 .footer {
     background-image: $color5;
-    padding: 14px 0px !important;
+    padding-top: 10px !important;
     font-family: $font1;
 
     .parrafoFooter {
@@ -228,19 +399,14 @@ main {
     } 
 
     .contenedorBotones {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
+        @include position(flex, column, center);
         padding-left: 30px !important;
     }
 
     .botonesDescarga {
+        @include flex-row-baseline;
         margin-bottom: $size1;
         gap: $size8;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: baseline;
-        justify-content: center;
 
         .btnDescarga {
             min-width: 120px;
@@ -251,10 +417,8 @@ main {
     }
 
     .redes {
+        @include flex-row-baseline;
         gap: $size9;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: baseline;
 
         .iconoRedes {
             width: $sizeRedes;
