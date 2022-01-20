@@ -364,7 +364,7 @@ header .navbar .nav-link {
 .footer {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#3b3838), to(rgba(59, 134, 37, 0.733)));
   background-image: linear-gradient(#3b3838, rgba(59, 134, 37, 0.733));
-  padding-top: 10px !important;
+  padding: 10px 0px !important;
   font-family: "Asap", sans-serif;
 }
 
