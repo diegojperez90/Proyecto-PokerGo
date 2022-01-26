@@ -14,6 +14,9 @@ $color6: rgb(207, 45, 45);
 $color7: tomato;
 $color8: rgba(255, 99, 71, 0.767);
 $color9: white;
+$color10: rgba(59, 134, 37, 0.733);
+$color11: rgb(59, 56, 56);
+$color12: rgba(118, 168, 102, 0.733);
 
 //operadores inicio
 
@@ -51,7 +54,7 @@ $size13: 46px;
 
 //border 
 
-$borderHover: 14px solid $color2;
+$borderHover: 14px solid $color11;
 
 //Mixin sin parametros
 
@@ -71,9 +74,9 @@ $borderHover: 14px solid $color2;
 
 //mapa en seccion formatos
 $map1: (
-    formato1: rgb(52, 105, 52),
+    formato1: rgb(22, 43, 22),
     formato2: orange,
-    formato3: violet,
+    formato3: rgb(119, 51, 119),
 );
 
 //Mapa 2 en seccion Nosotros aplicando map-get
@@ -145,7 +148,7 @@ header {
     .jumbotron {
         color: $color3;
         font-family: $font2;
-        background-color: $color4;
+        background-color: $color10;
         padding: 0px 30px !important;
         border-radius: 0px;
         margin-bottom: 0px;
@@ -201,11 +204,11 @@ header {
 
 
 #noticias {
-    background-color: $color6;
+    background-color: $color10;
     font-family: $font2;
 
     .fondoLista {
-        background-color: $color6;
+        background-color: $color12;
         font-size: $size3;
         border-bottom: 0px;
 
@@ -237,17 +240,20 @@ header {
     }
 }
 
+#noticias:hover {
+    border: $borderHover;
+}
+
 
 #formatos {
-    background-image: url("imagenes/as.jpeg");
-    background-size: contain;
+    background-image: $color1;
     color: $color9;
     font-family: $font2;
     padding: 0px 30px 60px 30px;
 
     .parrafoFormatos {
         font-size: $size3;
-        margin: 40px 0px;
+        margin: 20px 0px;
 
         @media only screen and (max-width: 750px) {
             font-size: $size4;
@@ -264,7 +270,6 @@ header {
             line-height: 1.5;
             margin: 30px 0px;
             color: $col;
-            text-shadow: 0 0 10px $col;
         }
     }
 
@@ -273,6 +278,11 @@ header {
         max-width: 280px;
         border: 2px solid $color9;
         width: $ancho;
+    }
+
+    .imgTamaño:hover {
+        min-width: 200px;
+        max-width: 320px;
     }
 }
 
@@ -326,7 +336,7 @@ header {
 
 
 #contacto {
-    background-color:khaki;
+    background-image: $color1;
     font-family: $font2;
     font-size: $size4;
 

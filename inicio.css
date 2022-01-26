@@ -62,7 +62,7 @@ header .navbar .nav-link {
 .main .jumbotron {
   color: black;
   font-family: "Palanquin Dark", sans-serif;
-  background-color: rgba(155, 145, 145, 0.822);
+  background-color: rgba(59, 134, 37, 0.733);
   padding: 0px 30px !important;
   border-radius: 0px;
   margin-bottom: 0px;
@@ -107,7 +107,7 @@ header .navbar .nav-link {
 }
 
 .main .jumbotron:hover {
-  border: 14px solid whitesmoke;
+  border: 14px solid #3b3838;
 }
 
 .main .imgPrincipal {
@@ -115,20 +115,20 @@ header .navbar .nav-link {
 }
 
 .main .imgPrincipal:hover {
-  border: 14px solid whitesmoke;
+  border: 14px solid #3b3838;
 }
 
 .main .imgSecundaria:hover {
-  border: 14px solid whitesmoke;
+  border: 14px solid #3b3838;
 }
 
 #noticias, #nosotros {
-  background-color: #cf2d2d;
+  background-color: rgba(59, 134, 37, 0.733);
   font-family: "Palanquin Dark", sans-serif;
 }
 
 #noticias .fondoLista, #nosotros .fondoLista {
-  background-color: #cf2d2d;
+  background-color: rgba(118, 168, 102, 0.733);
   font-size: 24px;
   border-bottom: 0px;
 }
@@ -162,9 +162,13 @@ header .navbar .nav-link {
   width: 100%;
 }
 
+#noticias:hover, #nosotros:hover {
+  border: 14px solid #3b3838;
+}
+
 #formatos {
-  background-image: url("imagenes/as.jpeg");
-  background-size: contain;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 134, 37, 0.733)), to(#3b3838));
+  background-image: linear-gradient(rgba(59, 134, 37, 0.733), #3b3838);
   color: white;
   font-family: "Palanquin Dark", sans-serif;
   padding: 0px 30px 60px 30px;
@@ -172,7 +176,7 @@ header .navbar .nav-link {
 
 #formatos .parrafoFormatos {
   font-size: 24px;
-  margin: 40px 0px;
+  margin: 20px 0px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -191,8 +195,7 @@ header .navbar .nav-link {
   font-size: 30px;
   line-height: 1.5;
   margin: 30px 0px;
-  color: #346934;
-  text-shadow: 0 0 10px #346934;
+  color: #162b16;
 }
 
 #formatos .titulo--formato2 {
@@ -200,15 +203,13 @@ header .navbar .nav-link {
   line-height: 1.5;
   margin: 30px 0px;
   color: orange;
-  text-shadow: 0 0 10px orange;
 }
 
 #formatos .titulo--formato3 {
   font-size: 30px;
   line-height: 1.5;
   margin: 30px 0px;
-  color: violet;
-  text-shadow: 0 0 10px violet;
+  color: #773377;
 }
 
 #formatos .imgTamaño {
@@ -216,6 +217,11 @@ header .navbar .nav-link {
   max-width: 280px;
   border: 2px solid white;
   width: 100%;
+}
+
+#formatos .imgTamaño:hover {
+  min-width: 200px;
+  max-width: 320px;
 }
 
 #nosotros {
@@ -292,7 +298,8 @@ header .navbar .nav-link {
 }
 
 #contacto {
-  background-color: khaki;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 134, 37, 0.733)), to(#3b3838));
+  background-image: linear-gradient(rgba(59, 134, 37, 0.733), #3b3838);
   font-family: "Palanquin Dark", sans-serif;
   font-size: 22px;
 }
