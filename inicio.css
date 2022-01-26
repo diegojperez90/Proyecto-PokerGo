@@ -165,7 +165,6 @@ header .navbar .nav-link {
 #formatos {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 134, 37, 0.733)), to(#3b3838));
   background-image: linear-gradient(rgba(59, 134, 37, 0.733), #3b3838);
-  color: white;
   font-family: "Palanquin Dark", sans-serif;
   padding: 0px 30px 60px 30px;
 }
