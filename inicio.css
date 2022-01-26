@@ -86,10 +86,6 @@ header .navbar .nav-link {
   }
 }
 
-.main .jumbotron .tituloPrincipal:hover {
-  color: whitesmoke;
-}
-
 .main .jumbotron .parrafosMain {
   font-size: 30px;
 }
